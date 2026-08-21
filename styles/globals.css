@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  color: #1F2937;
+  background: #FFFFFF;
+}
+
+a {
+  color: inherit;
+}
+
+.btn-primary {
+  background: #3B82F6;
+  color: #fff;
+  border: 1px solid #3B82F6;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-toggle {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+  background: #F9FAFB;
+  color: #6B7280;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-toggle.active {
+  background: #EAF3FD;
+  border-color: #3B82F6;
+  color: #3B82F6;
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.field-input, .field-select {
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1F2937;
+  background: #fff;
+  appearance: none;
+}
+
+.card {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  text-decoration: none;
+}
+.nav-link.active {
+  color: #3B82F6;
+  font-weight: 700;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.source-line {
+  font-size: 11px;
+  color: #6B7280;
+  text-decoration: none;
+  display: block;
+  margin-top: 2px;
+}
+.source-line:hover {
+  text-decoration: underline;
+}
+
+.page-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+}
