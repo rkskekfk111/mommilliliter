@@ -1,12 +1,12 @@
-import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Seo from "../components/Seo";
 import { tokens } from "../lib/data";
 
 export default function AboutPage() {
   return (
     <>
-      <Head><title>소개 — 맘밀리터</title></Head>
+      <Seo title="소개" description="맘밀리터는 브랜드·제품별 조유 비율을 반영해 정확한 분유량을 계산해드리는 사이트입니다. 데이터 신뢰도와 운영 방식을 소개합니다." path="/about" />
       <Header />
       <main className="page-wrap" style={{ padding: "20px" }}>
         <h1 style={{ fontSize: 18, fontWeight: 700, margin: "0 0 16px" }}>맘밀리터 소개</h1>

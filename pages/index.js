@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
-import Head from "next/head";
 import { ChevronDown, ChevronUp, MessageCircleQuestion } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Calculator from "../components/Calculator";
+import Seo from "../components/Seo";
 import { tokens, BRANDS, GUIDES } from "../lib/data";
 
 export default function Home() {
@@ -12,10 +12,11 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>맘밀리터 — 분유량 계산기</title>
-        <meta name="description" content="브랜드·제품별 스푼 비율을 반영한 분유량 계산기와 육아 가이드" />
-      </Head>
+      <Seo
+        title="분유량 계산기"
+        description="브랜드·제품·단계별 스푼과 물 비율을 반영해 정확한 분유량을 계산해드려요. 월령별 분유량, 조유법, 혼합수유 등 육아 가이드도 함께 제공합니다."
+        path=""
+      />
 
       <Header />
 

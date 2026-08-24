@@ -1,8 +1,8 @@
-import Head from "next/head";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Calculator from "../../components/Calculator";
+import Seo from "../../components/Seo";
 import { tokens, BRANDS } from "../../lib/data";
 
 export async function getStaticPaths() {
@@ -23,7 +23,11 @@ export default function BrandDetailPage({ brandId }) {
 
   return (
     <>
-      <Head><title>{brand.name} — 맘밀리터</title></Head>
+      <Seo
+        title={brand.name}
+        description={`${brand.name} 소개와 제품별 조유 비율, 분유량 계산기를 확인해보세요. ${brand.intro}`}
+        path={`/brands/${brand.id}`}
+      />
       <Header />
       <main className="page-wrap" style={{ padding: "20px" }}>
         <Link href="/brands" style={{ fontSize: 12, color: tokens.sub }}>← 브랜드 목록</Link>

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Head from "next/head";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Seo from "../../components/Seo";
 import { tokens, BRANDS } from "../../lib/data";
 
 export default function BrandsPage() {
@@ -22,7 +22,11 @@ export default function BrandsPage() {
 
   return (
     <>
-      <Head><title>브랜드 목록 — 맘밀리터</title></Head>
+      <Seo
+        title="분유 브랜드 목록"
+        description="매일유업, 남양유업, 파스퇴르, 압타밀, 루비락 등 국산·수입 분유 브랜드와 제품별 조유 비율 정보를 확인해보세요."
+        path="/brands"
+      />
       <Header />
       <main className="page-wrap" style={{ padding: "20px" }}>
         <h1 style={{ fontSize: 18, fontWeight: 700, margin: "0 0 16px" }}>브랜드 목록</h1>

@@ -1,8 +1,8 @@
-import Head from "next/head";
 import Link from "next/link";
 import { MessageCircleQuestion } from "lucide-react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Seo from "../../components/Seo";
 import { tokens, GUIDES } from "../../lib/data";
 
 export async function getStaticPaths() {
@@ -23,7 +23,7 @@ export default function GuideDetailPage({ slug }) {
 
   return (
     <>
-      <Head><title>{guide.title} — 맘밀리터</title></Head>
+      <Seo title={guide.title} description={guide.desc} path={`/guide/${guide.slug}`} />
       <Header />
       <main className="page-wrap" style={{ padding: "20px" }}>
         <Link href="/guide" style={{ fontSize: 12, color: tokens.sub }}>← 가이드 목록</Link>
