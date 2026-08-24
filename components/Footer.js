@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { tokens, CONTACT_EMAIL } from "../lib/data";
+import { tokens } from "../lib/data";
 
 export default function Footer() {
   return (
